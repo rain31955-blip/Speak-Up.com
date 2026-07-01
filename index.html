@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speak Up — Belajar Speaking Bahasa Inggris</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LANDING VIEW ============ -->
+<section class="view active" id="view-landing" data-view="landing">
+  <header class="landing-header">
+    <div class="landing-header__inner container">
+      <div class="logo">
+        <span class="logo__mark">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </span>
+        Speak Up
+      </div>
+      <nav class="landing-nav">
+        <a href="#fitur">Fitur</a>
+        <a href="#cara-kerja">Cara Kerja</a>
+        <a href="#testimoni">Testimoni</a>
+      </nav>
+      <div class="landing-header__actions">
+        <button class="btn btn--ghost" data-nav="login">Masuk</button>
+        <button class="btn btn--primary" data-nav="login">Mulai Gratis</button>
+      </div>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#fitur">Fitur</a>
+    <a href="#cara-kerja">Cara Kerja</a>
+    <a href="#testimoni">Testimoni</a>
+    <button class="btn btn--primary" data-nav="login">Mulai Gratis</button>
+  </div>
+
+  <main>
+    <section class="hero container">
+      <div class="hero__copy">
+        <p class="eyebrow">Latihan speaking harian</p>
+        <h1>Bicara bahasa Inggris <span class="highlight">dengan percaya diri,</span> mulai hari ini.</h1>
+        <p class="hero__desc">Speak Up melatih kefasihanmu lewat latihan pengucapan interaktif, kuis pemahaman, dan progres yang bisa kamu lihat setiap hari — bukan cuma teori tata bahasa.</p>
+        <div class="hero__cta">
+          <button class="btn btn--primary btn--lg" data-nav="login">Mulai Belajar Gratis</button>
+          <button class="btn btn--outline btn--lg" data-scroll="cara-kerja">Lihat Cara Kerja</button>
+        </div>
+        <div class="hero__stats">
+          <div><strong>10</strong><span>Lesson Speaking</span></div>
+          <div><strong>20</strong><span>Soal Kuis</span></div>
+          <div><strong>100%</strong><span>Gratis</span></div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="voice-card">
+          <div class="voice-card__top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <p class="voice-card__prompt">"How do you usually spend your weekend?"</p>
+          <div class="waveform waveform--lg" id="heroWaveform">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="voice-card__footer">
+            <span class="pill pill--accent">Skor Pengucapan: 92%</span>
+            <span class="pill pill--gold">+15 XP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fitur">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Kenapa Speak Up</p>
+        <h2 class="section-title">Semua yang kamu butuhkan untuk lancar bicara</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">🎤</div>
+            <h3>Latihan Pengucapan</h3>
+            <p>Ucapkan kalimat, dengarkan pelafalan native, dan dapatkan skor langsung dari sistem pengenalan suara.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">📈</div>
+            <h3>Progres Nyata</h3>
+            <p>Pantau XP, streak harian, dan lencana pencapaianmu di dashboard yang selalu update.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🧠</div>
+            <h3>Kuis Pemahaman</h3>
+            <p>Uji kosakata dan tata bahasa lewat 20 soal pilihan ganda setelah setiap sesi speaking.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🏅</div>
+            <h3>Sistem Lencana</h3>
+            <p>Kumpulkan lencana saat menyelesaikan lesson, menjaga streak, dan mendapat skor tinggi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="cara-kerja">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Cara Kerja</p>
+        <h2 class="section-title">Tiga langkah menuju lancar bicara</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step__num">01</span>
+            <h3>Pilih Lesson</h3>
+            <p>Mulai dari 10 lesson speaking bertema situasi sehari-hari, dari perkenalan sampai bercerita liburan.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">02</span>
+            <h3>Ucapkan & Rekam</h3>
+            <p>Dengarkan contoh pelafalan lalu rekam suaramu. Sistem akan menilai kecocokan ucapanmu.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">03</span>
+            <h3>Kerjakan Kuis</h3>
+            <p>Perkuat pemahaman lewat kuis 20 soal, kumpulkan XP, dan naik level.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimoni">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Testimoni</p>
+        <h2 class="section-title">Dipercaya pelajar dari berbagai latar belakang</h2>
+        <div class="testimoni-grid">
+          <div class="testimoni-card">
+            <p>"Fitur rekam suaranya bikin saya berani ngomong duluan, nggak cuma baca teori grammar."</p>
+            <div class="testimoni-person"><span class="avatar">RA</span><div><strong>Rani A.</strong><small>Mahasiswa</small></div></div>
+          </div>
+          <div class="testimoni-card">
+            <p>"Streak harian bikin ketagihan latihan. Sekarang interview kerja bahasa Inggris jadi lebih santai."</p>
+            <div class="testimoni-person"><span class="avatar">DP</span><div><strong>Dimas P.</strong><small>Fresh Graduate</small></div></div>
+          </div>
+          <div class="testimoni-card">
+            <p>"Kuisnya singkat tapi kena banget ke materi lesson. Cocok buat belajar sela-sela kerja."</p>
+            <div class="testimoni-person"><span class="avatar">SN</span><div><strong>Siti N.</strong><small>Karyawan</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <h2>Siap bicara lebih percaya diri?</h2>
+        <p>Gabung gratis, tanpa kartu kredit.</p>
+        <button class="btn btn--primary btn--lg" data-nav="login">Mulai Sekarang</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="landing-footer">
+    <div class="container landing-footer__inner">
+      <div class="logo logo--footer">
+        <span class="logo__mark"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+        Speak Up
+      </div>
+      <p>&copy; 2026 Speak Up. Belajar speaking, satu kalimat setiap hari.</p>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ LOGIN VIEW ============ -->
+<section class="view" id="view-login" data-view="login">
+  <div class="auth-screen">
+    <div class="auth-card">
+      <div class="logo logo--auth">
+        <span class="logo__mark"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+        Speak Up
+      </div>
+      <h1 id="authTitle">Selamat datang kembali</h1>
+      <p class="auth-sub" id="authSub">Masuk untuk lanjutkan progres belajarmu.</p>
+
+      <form id="authForm" novalidate>
+        <div class="field" id="fieldName" style="display:none;">
+          <label for="authName">Nama</label>
+          <input type="text" id="authName" placeholder="Nama lengkap" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="authEmail">Email</label>
+          <input type="email" id="authEmail" placeholder="kamu@email.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="authPassword">Kata Sandi</label>
+          <input type="password" id="authPassword" placeholder="Minimal 6 karakter" autocomplete="current-password" required>
+        </div>
+        <p class="field-error" id="authError"></p>
+        <button type="submit" class="btn btn--primary btn--block" id="authSubmit">Masuk</button>
+      </form>
+
+      <button class="btn btn--outline btn--block" id="guestBtn">Lanjutkan sebagai Tamu</button>
+
+      <p class="auth-switch">
+        <span id="authSwitchText">Belum punya akun?</span>
+        <a href="#" id="authSwitchLink">Daftar</a>
+      </p>
+      <a href="#" class="auth-back" data-nav="landing">← Kembali ke Beranda</a>
+    </div>
+    <div class="auth-side">
+      <div class="waveform waveform--lg">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <p>"Practice makes fluent — one sentence at a time."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APP SHELL (Dashboard / Speaking / Quiz / Profile) ============ -->
+<section class="view" id="view-app" data-view="app">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="logo logo--sidebar">
+        <span class="logo__mark"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+        Speak Up
+      </div>
+      <nav class="sidebar-nav">
+        <button class="sidebar-link" data-page="dashboard"><span class="ico">🏠</span>Dashboard</button>
+        <button class="sidebar-link" data-page="speaking"><span class="ico">🎤</span>Speaking</button>
+        <button class="sidebar-link" data-page="quiz"><span class="ico">📝</span>Quiz</button>
+        <button class="sidebar-link" data-page="profile"><span class="ico">👤</span>Profile</button>
+      </nav>
+      <button class="sidebar-logout" id="logoutBtn"><span class="ico">🚪</span>Keluar</button>
+    </aside>
+
+    <div class="app-main">
+      <header class="app-topbar">
+        <button class="icon-btn" id="mobileNavBtn" aria-label="Menu">☰</button>
+        <p class="app-topbar__title" id="pageTitle">Dashboard</p>
+        <div class="app-topbar__user">
+          <span class="streak-chip">🔥 <b id="topbarStreak">0</b></span>
+          <span class="xp-chip">⭐ <b id="topbarXp">0</b> XP</span>
+          <span class="avatar avatar--sm" id="topbarAvatar">U</span>
+        </div>
+      </header>
+
+      <!-- ---- PAGE: DASHBOARD ---- -->
+      <div class="page-panel active" data-page="dashboard">
+        <div class="page-inner">
+          <h2 class="greeting">Halo, <span id="dashName">Pelajar</span> 👋</h2>
+          <p class="greeting-sub">Ini progres belajarmu hari ini.</p>
+
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span class="stat-card__label">Total XP</span>
+              <span class="stat-card__value" id="statXp">0</span>
+              <div class="progress-bar"><div class="progress-bar__fill" id="levelFill"></div></div>
+              <span class="stat-card__note" id="levelNote">Level 1</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__label">Streak Harian</span>
+              <span class="stat-card__value" id="statStreak">0 hari</span>
+              <span class="stat-card__note">Jangan putus, latihan tiap hari!</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__label">Lesson Selesai</span>
+              <span class="stat-card__value" id="statLessons">0/10</span>
+              <span class="stat-card__note">Speaking practice</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__label">Skor Kuis Terbaik</span>
+              <span class="stat-card__value" id="statQuiz">–</span>
+              <span class="stat-card__note">dari 20 soal</span>
+            </div>
+          </div>
+
+          <div class="dash-columns">
+            <div class="continue-card">
+              <div class="continue-card__text">
+                <p class="eyebrow">Lanjutkan Belajar</p>
+                <h3 id="continueTitle">Mulai Lesson 1: Perkenalan Diri</h3>
+                <p id="continueDesc">Latih cara memperkenalkan diri dengan percaya diri dalam Bahasa Inggris.</p>
+                <button class="btn btn--primary" id="continueBtn">Lanjutkan →</button>
+              </div>
+              <div class="waveform" id="dashWaveform">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+
+            <div class="badge-card">
+              <p class="eyebrow">Lencana</p>
+              <div class="badge-grid" id="badgeGrid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- PAGE: SPEAKING LIST ---- -->
+      <div class="page-panel" data-page="speaking">
+        <div class="page-inner">
+          <h2 class="page-heading">Speaking Practice</h2>
+          <p class="page-sub">10 lesson percakapan sehari-hari. Selesaikan berurutan untuk membuka lesson berikutnya.</p>
+          <div class="lesson-grid" id="lessonGrid"></div>
+        </div>
+      </div>
+
+      <!-- ---- PAGE: LESSON DETAIL ---- -->
+      <div class="page-panel" data-page="lesson">
+        <div class="page-inner page-inner--narrow">
+          <button class="link-back" data-page="speaking">← Semua Lesson</button>
+          <p class="eyebrow" id="lessonEyebrow">Lesson 1</p>
+          <h2 class="page-heading" id="lessonTitle">Perkenalan Diri</h2>
+          <p class="page-sub" id="lessonDesc"></p>
+
+          <div class="lesson-card">
+            <p class="lesson-card__label">Ucapkan kalimat berikut:</p>
+            <p class="lesson-sentence" id="lessonSentence">—</p>
+
+            <div class="lesson-actions">
+              <button class="btn btn--outline" id="listenBtn">🔊 Dengarkan</button>
+              <button class="btn btn--primary" id="recordBtn">🎤 Mulai Rekam</button>
+            </div>
+
+            <div class="waveform waveform--rec" id="recordWaveform">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="lesson-result" id="lessonResult" style="display:none;">
+              <p class="lesson-result__label">Hasil ucapanmu:</p>
+              <p class="lesson-result__transcript" id="lessonTranscript">—</p>
+              <div class="score-ring" id="scoreRing">
+                <span id="scoreValue">0%</span>
+              </div>
+              <p class="lesson-result__feedback" id="lessonFeedback"></p>
+            </div>
+
+            <p class="lesson-note" id="lessonNote"></p>
+          </div>
+
+          <div class="lesson-nav">
+            <button class="btn btn--ghost" id="prevLessonBtn">← Lesson Sebelumnya</button>
+            <button class="btn btn--primary" id="nextLessonBtn">Selesai & Lanjut →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- PAGE: QUIZ ---- -->
+      <div class="page-panel" data-page="quiz">
+        <div class="page-inner page-inner--narrow" id="quizIntro">
+          <h2 class="page-heading">Quiz Pemahaman</h2>
+          <p class="page-sub">20 soal pilihan ganda seputar kosakata &amp; tata bahasa dasar percakapan.</p>
+          <div class="quiz-intro-card">
+            <div class="waveform">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <ul class="quiz-info-list">
+              <li>📋 20 pertanyaan pilihan ganda</li>
+              <li>⏱️ Kerjakan tanpa batas waktu</li>
+              <li>⭐ Dapatkan XP dari setiap jawaban benar</li>
+            </ul>
+            <button class="btn btn--primary btn--lg" id="startQuizBtn">Mulai Kuis</button>
+          </div>
+        </div>
+
+        <div class="page-inner page-inner--narrow" id="quizPlay" style="display:none;">
+          <div class="quiz-progress">
+            <span id="quizProgressLabel">Soal 1/20</span>
+            <div class="progress-bar"><div class="progress-bar__fill" id="quizProgressFill"></div></div>
+          </div>
+          <h3 class="quiz-question" id="quizQuestion">—</h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <div class="quiz-nav">
+            <button class="btn btn--primary btn--block" id="quizNextBtn" disabled>Jawaban Berikutnya</button>
+          </div>
+        </div>
+
+        <div class="page-inner page-inner--narrow" id="quizResult" style="display:none;">
+          <div class="quiz-result-card">
+            <p class="eyebrow eyebrow--center">Kuis Selesai</p>
+            <div class="score-ring score-ring--big" id="finalScoreRing"><span id="finalScoreValue">0/20</span></div>
+            <h2 id="quizResultTitle">Kerja Bagus!</h2>
+            <p id="quizResultDesc">Kamu mendapatkan XP dari kuis ini.</p>
+            <div class="quiz-result-actions">
+              <button class="btn btn--outline" id="retryQuizBtn">Ulangi Kuis</button>
+              <button class="btn btn--primary" id="backDashBtn">Kembali ke Dashboard</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- PAGE: PROFILE ---- -->
+      <div class="page-panel" data-page="profile">
+        <div class="page-inner page-inner--narrow">
+          <h2 class="page-heading">Profil</h2>
+          <div class="profile-card">
+            <span class="avatar avatar--lg" id="profileAvatar">U</span>
+            <div class="profile-info">
+              <div class="field">
+                <label for="profileName">Nama</label>
+                <input type="text" id="profileName">
+              </div>
+              <div class="field">
+                <label for="profileEmail">Email</label>
+                <input type="email" id="profileEmail" disabled>
+              </div>
+              <button class="btn btn--primary" id="saveProfileBtn">Simpan Perubahan</button>
+              <p class="save-note" id="saveNote"></p>
+            </div>
+          </div>
+
+          <div class="profile-stats">
+            <div class="profile-stat"><span id="pStatXp">0</span><small>Total XP</small></div>
+            <div class="profile-stat"><span id="pStatLevel">1</span><small>Level</small></div>
+            <div class="profile-stat"><span id="pStatStreak">0</span><small>Streak</small></div>
+            <div class="profile-stat"><span id="pStatLessons">0/10</span><small>Lesson</small></div>
+            <div class="profile-stat"><span id="pStatQuiz">–</span><small>Skor Kuis</small></div>
+          </div>
+
+          <p class="eyebrow">Lencana Diperoleh</p>
+          <div class="badge-grid" id="profileBadgeGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
